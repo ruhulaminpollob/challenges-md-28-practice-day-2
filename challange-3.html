@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/adaf10bc0b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -14,28 +15,32 @@
         <section class="w-10/12 mx-auto border-black border-2 rounded bg-sky-300">
             <div class="flex justify-between m-5">
                 <div class="flex gap-1">
-                    <button id="bold-btn" class="p-2 hover:bg-sky-400">Bold</button>
-                    <button id="italic-btn" class="p-2 hover:bg-sky-400">Italic</button>
-                    <button id="underline-btn" class="p-2 hover:bg-sky-400">Underline</button>
+                    <button id="bold-btn" class="p-2 rounded hover:text-white"><i class="fa-solid fa-bold"></i></button>
+                    <button id="italic-btn" class="p-2 rounded hover:text-white"><i class="fa-solid fa-italic"></i></button>
+                    <button id="underline-btn" class="p-2 rounded hover:text-white"><i class="fa-solid fa-underline"></i></button>
                 </div>
             
                 <div class="flex gap-1">
-                    <button id="align-start-btn" class="p-2 hover:bg-sky-400">Align Start</button>
-                    <button id="align-center-btn" class="p-2 hover:bg-sky-400">Align Center</button>
-                    <button id="align-left-btn" class="p-2 hover:bg-sky-400">Align Left</button>
-                    <button id="align-justify-btn" class="p-2 hover:bg-sky-400">Align justify</button>
+                    <button id="align-start-btn" class="p-2 rounded hover:text-white"><i class="fa-solid fa-align-left"></i></button>
+                    <button id="align-center-btn" class="p-2 rounded hover:text-white"><i class="fa-solid fa-align-center"></i></button>
+                    <button id="align-left-btn" class="p-2 rounded hover:text-white"><i class="fa-solid fa-align-right"></i></button>
+                    <button id="align-justify-btn" class="p-2 rounded hover:text-white"><i class="fa-solid fa-align-justify"></i></button>
                 </div>
-                <div class="flex gap-1">
-                    <button id="font-size-btn" class="p-2 hover:bg-sky-400">Font Size</button>
-                    <button id="case-btn" class="p-2 hover:bg-sky-400">Case</button>
-                    <button id="text-color-btn" class="p-2 hover:bg-sky-400">Text Color</button>
+                <div class="flex gap-1 items-center">
+                    <!-- <button id="font-size-btn" class="p-2 rounded  hover:text-white">Font Size</button> -->
+                    <input type="number" name="" id="font-size-btn" onchange="changeFontSize()" value="1" class="w-16 rounded p-2" >
+                    <button id="case-btn" class="p-2 rounded hover:text-white"><i class="fa-solid fa-font-case"></i></button>
+                    
+                    <!-- <button id="text-color-btn" class="p-2 rounded hover:text-white">Text Color</button> -->
+                    <label for="">Color:</label>
+                    <input type="color" name="" id="text-color-btn">
                 </div>
                 
             </div>
             <hr class="border-black border-b-1 w-11/12 mx-auto mb-5">
             
             <div class="w-11/12 mx-auto">
-                <textarea name="" id="text-filed" class="w-full p-5 rounded" cols="30" rows="10"></textarea>
+                <textarea name="" id="text-filed" class="w-full p-5 rounded" cols="" rows="8"></textarea>
             </div>
         </section>
         
