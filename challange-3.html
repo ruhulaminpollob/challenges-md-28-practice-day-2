@@ -7,17 +7,38 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-sky-400">
-    <header>
-        <h1 class="text-5xl font-semibold">My Text Editor</h1>
-    </header>
-    <main class="border-2">
-        <section>
-
+<body>
+    
+    <main class="w-10/12 mx-auto mt-20 p-10 bg-sky-400 rounded shadow">
+        <h1 class="text-4xl font-semibold text-center mb-10">My Text Editor</h1>
+        <section class="w-10/12 mx-auto border-black border-2 rounded bg-sky-300">
+            <div class="flex justify-between m-5">
+                <div class="flex gap-1">
+                    <button id="bold-btn" class="p-2 hover:bg-sky-400">Bold</button>
+                    <button id="itelic-btn" class="p-2 hover:bg-sky-400">Italic</button>
+                    <button id="underline-btn" class="p-2 hover:bg-sky-400">Underline</button>
+                </div>
+            
+                <div class="flex gap-1">
+                    <button id="align-start-btn" class="p-2 hover:bg-sky-400">Align Start</button>
+                    <button id="align-center-btn" class="p-2 hover:bg-sky-400">Align Center</button>
+                    <button id="align-left-btn" class="p-2 hover:bg-sky-400">Align Left</button>
+                    <button id="align-justify-btn" class="p-2 hover:bg-sky-400">Align justify</button>
+                </div>
+                <div class="flex gap-1">
+                    <button id="font-size-btn" class="p-2 hover:bg-sky-400">Font Size</button>
+                    <button id="case-btn" class="p-2 hover:bg-sky-400">Case</button>
+                    <button id="text-color-btn" class="p-2 hover:bg-sky-400">Text Color</button>
+                </div>
+                
+            </div>
+            <hr class="border-black border-b-1 w-11/12 mx-auto mb-5">
+            
+            <div class="w-11/12 mx-auto">
+                <textarea name="" id="text-filed" class="w-full" cols="30" rows="10"></textarea>
+            </div>
         </section>
-        <section>
-            <textarea name="" id="text-filed" class="" cols="30" rows="10"></textarea>
-        </section>
+        
     </main>
 </body>
-</html>
+</html>s
