@@ -15,7 +15,7 @@ function getAndSet(inputId, setId,isDeposit) {
     // get deposit set value and location
     const getSetLocation=document.getElementById(setId);
     const setValueString=getSetLocation.innerText;
-    const setValue=parseFloat(setValueString);
+    const setValue=parseFloat(setValueString)
 
     // set 
     if (setValue <= 0) {
