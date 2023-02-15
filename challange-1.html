@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Statement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl font-semibold text-center m-4">Let's gets some <span
+                class="font-bold text-cyan-700">Money!!</span></h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 w-9/12 mx-auto gap-5 mt-20 text-white">
+            <div class="bg-blue-400  p-5 rounded-md">
+                <h1 class="text-2xl font-medium">Deposit</h1>
+                <h2 class="text-5xl font-medium">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="bg-orange-500  p-5 rounded-md">
+                <h1 class="text-2xl font-medium">Balance</h1>
+                <h2 class="text-5xl font-medium">$<span id="balance-total">2050</span></h2>
+            </div>
+            <div class="bg-cyan-800  p-5 rounded-md">
+                <h1 class="text-2xl font-medium">Withdraw</h1>
+                <h2 class="text-5xl font-medium">$<span id="withdraw-total">00</span></h2>
+            </div>
+
+        </section>
+        <section class="grid grid-cols-2 w-9/12 mx-auto gap-5 mt-20 ">
+            <div class="bg-indigo-600  p-5 rounded-md">
+                <h1 class="text-2xl font-medium mb-5 text-white">Deposit Amount</h1>
+                <input type="text" name="" id="deposit-filed" class="w-full py-1 px-3 rounded-sm mb-3"
+                    placeholder="Inter Deposit Amount">
+                <button id="deposit-btn"
+                    class="bg-blue-400 font-semibold rounded-md text-white w-fit py-2 px-5 hover:bg-blue-500">Deposit</button>
+            </div>
+
+            <div class="bg-fuchsia-500  p-5 rounded-md">
+                <h1 class="text-2xl font-medium mb-5 text-white">Withdraw Amount</h1>
+                <input type="text" name="" id="withdraw-filed" class="w-full py-1 px-3 rounded-sm mb-3"
+                    placeholder="Inter Withdraw Amount">
+                <button id="withdraw-btn"
+                    class="bg-cyan-800 font-semibold rounded-md text-white w-fit py-2 px-5 hover:bg-cyan-700">Withdraw</button>
+            </div>
+        </section>
+
+        <script src="challange-1.js"></script>
+        
+    </main>
+
+</body>
+
+</html>
